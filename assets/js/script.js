@@ -92,6 +92,36 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentIndex = 0;
     let score = 0;
 
+    displayQuestion(); // calling to display the questions withen quiz section 
+
+    function displayQuestion() {
+        const q = questions[currentIndex];
+        // getting the question from the list above , and place it in the paragraph element "<p id="question"
+        document.getElementById("question").textContent = q.question;
+
+        // getting the unordered list from html to create li elements inside it 
+        const optionsList = document.getElementById("options-list");
+        optionsList.innerHTML = "";
+        // shuffles the options
+        let answers = q.options.sort(() => Math.random() - 0.5);
+
+        // loop throgh the options 
+        answers.forEach((option) => {
+            const li = document.createElement("li");
+            li.textContent = option;
+
+            // listen to click on the list item
+            li.addEventListener("click", () => {
+            // passing the clicked option and the right answer to checkAnswer function
+            checkAnswer(option, q.answer);
+            });
+
+            optionsList.appendChild(li);
+        });
+    }
+
+    
+
 
 
 
