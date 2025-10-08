@@ -274,64 +274,97 @@ form {
 }
 
 /* Responsive Design */
-/* making everything a bit bigger for tablets and pc's */
-@media (min-width: 768px) {
-    .main-container {
-    gap: 0.5rem;
-    }
-    header{
-    flex-direction: row;
-    gap: 3rem;
-    align-items: center;
-    }
+/* Tablets and bigger */
+@media (min-width: 768px) and (max-width: 1023px) {
     h1 {
-    font-size: 3.3rem;
+        font-size: 2.8rem;
     }
+
     #nav-links {
-    gap: 1.7rem;
-    font-size: 1.95rem;
+        gap: 1.5rem;
+        font-size: 1.4rem;
     }
-    h2 {
-    font-size: 2.1rem;
-    padding: 7px;
-    }
+
     #intro-section {
-    font-size: 1.2rem;
-    gap: 2rem;
+        font-size: 1.1rem;
+        gap: 1.3rem;
     }
+
     #options-list li {
-    max-width: 100%;
-    font-size: 1.2rem;
-    padding: 1rem;
+        font-size: 1.1rem;
+        padding: 0.9rem;
+        max-width: 35rem;
     }
+
     .btn {
-    width: 9rem;
-    height: 3.8rem;
-    font-size: 1.3rem;
-    margin: 1.5rem 1.5rem;
+        width: 8.5rem;
+        height: 3.5rem;
+        font-size: 1.1rem;
     }
-    #score {
-    font-size: 3rem;
-    }
+
     #about {
-    margin: 4rem 0;
-    font-size: 1.5rem;
+        font-size: 1.3rem;
     }
-    form {
-    gap: 0.7rem;
-    margin: 1rem 0;
+}
+
+
+/* Pc with 1024 and bigger */
+@media (min-width: 1024px) {
+    header {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 2rem 4rem;
     }
-    .contact-form textarea,
-    .contact-form input {
-        font-size: 0.95rem;
-        padding: 0.6rem;
-        max-width: 50%;
-        text-align: center;
+
+    h1 {
+        font-size: 3.8rem;
     }
-    #social {
-    gap: 0.7rem;
+
+    #nav-links {
+        gap: 3rem;
+        font-size: 1.6rem;
     }
-    .fa-brands {
+
+    #intro-section {
+        font-size: 1.3rem;
+        gap: 2.5rem;
+    }
+
+    #options-list li {
+        font-size: 1.3rem;
+        padding: 1.2rem 2rem;
+        max-width: 45rem;
+    }
+
+    .btn {
+        width: 10rem;
+        height: 4rem;
+        font-size: 1.3rem;
+    }
+
+    #score {
         font-size: 3.2rem;
+    }
+
+    #about {
+        font-size: 1.5rem;
+        margin: 5rem auto;
+        width: 80%;
+        line-height: 2;
+    }
+
+    form {
+        max-width: 600px;
+        margin: 2rem auto;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    #social .fa-brands {
+        font-size: 3.5rem;
     }
 }
