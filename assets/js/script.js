@@ -120,7 +120,27 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    
+    function checkAnswer(selected, correct) {
+        const optionsList = document.getElementById("options-list");
+        // we taking an arry from the options list 
+        // Array.from ! >> new method ES6
+        [...optionsList.children].forEach((li) => {
+            if (li.textContent === correct) {
+            // heighlight the correct answer no matter the selected answer is!
+            li.classList.add("correct");
+            // heighlight the selected answer also if its wrong
+            } else if (li.textContent === selected) {
+            li.classList.add("wrong");
+            }
+            li.style.pointerEvents = "none"; // disable multi clicks
+        });
+
+        // if the selected answer is the right answer , then add 1 to score 
+        if (selected === correct) score++;
+        // display next or restart btns
+        nextBtn.classList.remove("hidden");
+        resetBtn.classList.remove("hidden");
+    }
 
 
 
