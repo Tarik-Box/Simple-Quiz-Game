@@ -172,3 +172,22 @@ fieldset div {
     background-color: white;
     color: #006aff;
 }
+
+/* will be added with Javascript */
+.correct {
+    background-color: #007430 !important;
+    color: white;
+    animation: pulseCorrect 0.6s ease-in-out;
+}
+
+.wrong {
+    background-color: #820e01 !important;
+    color: white;
+    animation: pulseWrong 0.6s ease-in-out;
+}
+
+
+/* Hidden helper */
+.hidden {
+    display: none !important;
+}
