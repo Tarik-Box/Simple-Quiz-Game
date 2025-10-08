@@ -105,6 +105,13 @@ h2{
     border-radius: 1px;
 }
 
+/* Improvment : this class added later to improve error handling and defincive programming */
+.alert {
+    color: red;
+    margin-top: 8px;
+    font-size: 0.9rem;
+}
+
 /* fieldset that contains the levels < easy , med or hard ! */
 fieldset {
     border: none;
