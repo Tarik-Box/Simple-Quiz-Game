@@ -144,3 +144,31 @@ fieldset div {
 #options-list li:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
+
+/* Buttons */
+.btn {
+    width: 8rem;
+    height: 3rem;
+    background-color: #006aff;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin: 1rem 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.5s ease-in-out;
+}
+#reset-btn{
+    background-color: #605f5f;
+}
+#reset-btn:hover{
+    background-color: #810101;
+    color: white;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #006aff;
+}
