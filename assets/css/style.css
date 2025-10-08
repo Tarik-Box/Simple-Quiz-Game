@@ -80,3 +80,42 @@ h2{
     box-shadow: 0 0 2px 0 #985100;
     transition: all 0.5s ease-in-out;
 }
+
+/* Intro Section / Layer */
+#intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 1rem;
+    transition: all 0.5s ease-in-out;  
+}
+/* Adding extra margin at top of h2 element withen intro section */
+#intro-heading{
+    margin-top: 1.5rem;
+    transition: all 0.5s ease-out; 
+}
+
+#intro-section #username {
+    text-align: center;
+    font-size: 1.2rem;
+    height: 2.5em;
+    border: 1px solid white;
+    border-radius: 1px;
+}
+
+/* fieldset that contains the levels < easy , med or hard ! */
+fieldset {
+    border: none;
+}
+
+fieldset legend {
+    margin-bottom: 0.7rem;
+}
+
+fieldset div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
