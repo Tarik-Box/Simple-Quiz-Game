@@ -1,3 +1,27 @@
+/**
+ * Quiz Game - Script
+    * 
+    * This script was intentionally structured with most logic 
+    * contained inside the `runGame()` function rather than being 
+    * split into many global-level functions.
+    * 
+    * The main reason behind this design choice is to minimize 
+    * the use of global variables, following the best practices 
+    * taught in the course — keeping all variables and helper 
+    * functions within the same functional scope.
+    * 
+    * This approach helps:
+    *  - Prevent variable name conflicts in the global namespace.
+    *  - Keep the game logic encapsulated and easier to debug.
+    *  - Maintain a clear execution flow inside a single parent function.
+    * 
+    * While modularization (splitting code into multiple functions) 
+    * can improve reusability in larger projects, this structure 
+    * is more suitable for a small, self-contained interactive app 
+    * like this quiz game.
+ */
+
+
 // Wait until page loads
 document.addEventListener("DOMContentLoaded", function () {
   // Global variables withen the main function after loading
@@ -175,5 +199,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
         document.getElementById("score").textContent = `${userName}, your score: ${score}/${questions.length}\n${message}`;
     }
-    }
+    }   
 });
