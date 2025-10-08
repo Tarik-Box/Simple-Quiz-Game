@@ -142,14 +142,38 @@ document.addEventListener("DOMContentLoaded", function () {
         resetBtn.classList.remove("hidden");
     }
 
+    nextBtn.addEventListener("click", () => {
+        currentIndex++;
+        if (currentIndex < questions.length) {
+            displayQuestion();
+            nextBtn.classList.add("hidden");
+            resetBtn.classList.add("hidden");
+        } 
+        else {
+        showResults();
+        }
+    });
+    resetBtn.addEventListener("click", () => {
+      // restart the game !
+        function resetGame() {
+            currentIndex = 0;
+            score = 0;
+            document.getElementById("results-section").classList.add("hidden");
+            document.getElementById("quiz-section").classList.remove("hidden");
+            displayQuestion();
+        }
+    });
+    // display the results at the end .
+    function showResults() {
+        document.getElementById("quiz-section").classList.add("hidden");
+        document.getElementById("results-section").classList.remove("hidden");
 
+        let message;
+        if (score === questions.length) message = "Perfect! You nailed them all 🎉";
+        else if (score >= questions.length * 0.7) message = "Great job! Almost perfect 👏";
+        else message = "Keep practicing! You'll do better next time 💪";
 
-
-
-
-
-
-
-
+        document.getElementById("score").textContent = `${userName}, your score: ${score}/${questions.length}\n${message}`;
+    }
     }
 });
