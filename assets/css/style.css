@@ -36,3 +36,47 @@ a {
 ul {
     list-style: none;
 }
+
+header {
+    width: 100%;
+    height: 12em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 2.5;
+}
+
+/* styling only "Quiz" word only of the title (Quiz Game) */
+.q-span{
+    background-color: #985100;
+    padding: 10px;
+    box-shadow: 0 0 0 2px #985100;
+}
+
+h1{
+    font-size: 2.5rem;;
+    transition: all 0.5s ease-in-out;
+}
+#nav-links{
+    display: flex;
+    gap: 2rem;
+    transition: all 0.5s ease-in-out;
+}
+
+/*  shared style */
+header,
+main,
+footer {
+    background-color: #171d24;
+    color: white;
+    padding: 1rem;
+}
+
+h2{
+    margin: 2rem 0;
+    background-color: #985100;
+    padding: 10px;
+    box-shadow: 0 0 2px 0 #985100;
+    transition: all 0.5s ease-in-out;
+}
