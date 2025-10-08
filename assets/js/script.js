@@ -179,13 +179,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     resetBtn.addEventListener("click", () => {
       // restart the game !
-        function resetGame() {
-            currentIndex = 0;
-            score = 0;
-            document.getElementById("results-section").classList.add("hidden");
-            document.getElementById("quiz-section").classList.remove("hidden");
-            displayQuestion();
-        }
+        window.location.reload();
     });
     // display the results at the end .
     function showResults() {
