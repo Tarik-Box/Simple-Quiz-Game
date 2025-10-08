@@ -191,3 +191,63 @@ fieldset div {
 .hidden {
     display: none !important;
 }
+
+/* Results Section */
+#results-section {
+    margin: 2rem 0;
+}
+#score{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+#results-heading{
+    margin: 3rem 0;
+}
+
+/* About */
+
+#about{
+    margin: 3rem 0;
+    border-top: 15px solid white;
+    line-height: 2;
+    transition: all 0.5s ease-in-out;
+}
+/* Footer */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem 0;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.contact-form textarea,
+.contact-form input {
+    font-size: 1rem;
+    padding: 0.8rem;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 25rem;
+}
+#text-area{
+    height: 160px;
+}
+
+#social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.fa-brands {
+    font-size: 2rem;
+    transition: all 0.5s ease-in-out;
+}
+.fa-brands:hover {
+    transform: scale(1.1);
+}
