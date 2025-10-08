@@ -35,12 +35,23 @@ document.addEventListener("DOMContentLoaded", function () {
     // listen to statr btn click !
     startBtn.addEventListener("click", function () {
         const username = usernameInput.value.trim();
-        userName = username;
-        // making sure that the field is not empty or have only spaces !
+        const introSection = document.getElementById("intro-section");
+        const existingMsg = introSection.querySelector(".alert");
+
+        // Remove existing message if any
+        if (existingMsg) existingMsg.remove();
+
+        // Validate input
         if (username === "") {
-            alert("Please enter your name!");
+            const msg = document.createElement("p");
+            msg.textContent = "Please enter your name to start the game.";
+            msg.classList.add("alert");
+            introSection.appendChild(msg);
             return;
         }
+
+        // Continue
+        userName = username;
         // get the current level from the radio input 
         const selectedLevel = document.querySelector('input[name="level"]:checked').value;
         
