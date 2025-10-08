@@ -30,7 +30,29 @@
 
             <!-- Main -->
             <main>
-            
+                <!-- Intro Section -->
+                <section id="intro-section" aria-labelledby="intro-heading">
+                    <h2 id="intro-heading" >Game Introduction</h2>
+
+                    <label for="username">Enter Your Name</label>
+                    <input type="text" id="username"  name="username" placeholder="Your name" aria-label="Enter your name" required>
+
+                    <fieldset aria-label="Select game difficulty">
+                    <legend>Select a level:</legend>
+                    <div>
+                        <input type="radio" id="easy" name="level" value="easy" checked>
+                        <label for="easy">Easy</label>
+
+                        <input type="radio" id="med" name="level" value="med">
+                        <label for="med">Medium</label>
+
+                        <input type="radio" id="hard" name="level" value="hard">
+                        <label for="hard">Hard</label>
+                    </div>
+                    </fieldset>
+
+                    <button id="start" class="btn big-btn" aria-label="Start the quiz">Start</button>
+                </section>            
             </main>
             
             <!-- Footer -->
