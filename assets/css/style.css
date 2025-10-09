@@ -289,6 +289,12 @@ form {
         font-size: 1.1rem;
         gap: 1.3rem;
     }
+    #options-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
 
     #options-list li {
         font-size: 1.1rem;
@@ -329,7 +335,12 @@ form {
         font-size: 1.3rem;
         gap: 2.5rem;
     }
-
+    #options-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
     #options-list li {
         font-size: 1.3rem;
         padding: 1.2rem 2rem;
